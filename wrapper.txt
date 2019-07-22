@@ -1,0 +1,23 @@
+
+public class WrapperClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=6;
+		Integer i=Integer.valueOf(a);
+		Integer j= a; // autoboxing
+		
+		int k = i+j;//unboxing
+		System.out.println(k);
+		
+	Character p='p';
+	Character q=new Character('q');
+	char r=p;
+	System.out.println("p="+p);
+	System.out.println("q="+q);
+	System.out.println("r="+r);
+	
+		
+	
+}
+}

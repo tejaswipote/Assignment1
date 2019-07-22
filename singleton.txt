@@ -1,0 +1,50 @@
+class Demo
+	{
+		public int s=6;
+	
+	private static Demo ob;
+	private Demo( ){}
+	
+	 public static Demo getInstance() 
+	    { 
+	       if (ob==null) {
+	            ob = new Demo();
+	       }
+	        return ob; 
+	    }
+		
+	
+	}
+
+
+public class SingleTone {
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Demo d= Demo.getInstance();
+		Demo d1=Demo.getInstance();
+		Demo d2=Demo.getInstance();
+		
+
+		
+		System.out.println(d.s);
+		System.out.println(d1.s);
+		System.out.println(d2.s);
+		
+		d2.s=9;
+		System.out.println(d.s);
+		System.out.println(d1.s);
+		
+		System.out.println(d2.s);
+		
+		
+		
+
+
+
+	}
+
+}
